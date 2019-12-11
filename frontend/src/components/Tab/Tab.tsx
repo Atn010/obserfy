@@ -22,7 +22,7 @@ export const Tab: FC<TabProps> = ({
       sx={Object.assign(sx != null ? sx : {}, {
         borderBottomColor: "border",
         borderBottomWidth: 1,
-        borderBottomStyle: "solid"
+        borderBottomStyle: "solid",
       })}
       minWidth="100%"
       width={items.length > 3 ? "fit-content" : "100%"}
@@ -51,12 +51,13 @@ interface TabItemProps extends TextProps {
   onClick?: () => void
 }
 const TabItem: FC<TabItemProps> = ({ isSelected, onClick, ...props }) => (
-  <Typography.H6
+  <Typography.Body
     {...props}
     onClick={onClick}
     mx={3}
     mb={0}
     color={isSelected ? "primaryDark" : "text"}
+    fontSize={1}
     sx={{
       whiteSpace: "nowrap",
       cursor: "pointer",
@@ -72,8 +73,8 @@ const TabItem: FC<TabItemProps> = ({ isSelected, onClick, ...props }) => (
         height: 3,
         content: "''",
         marginTop: 12,
-        transition: "width 100ms cubic-bezier(0.0, 0.0, 0.2, 1)"
-      }
+        transition: "width 100ms cubic-bezier(0.0, 0.0, 0.2, 1)",
+      },
     }}
   />
 )

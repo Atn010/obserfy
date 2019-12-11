@@ -23,6 +23,9 @@ import { getAnalytics } from "../../analytics"
 import ObservationCard from "../ObservationCard/ObservationCard"
 import Spacer from "../Spacer/Spacer"
 import ToggleButton from "../ToggleButton/ToggleButton"
+import Card from "../Card/Card"
+import { categories } from "../../categories"
+import Tab from "../Tab/Tab"
 
 enum ObservationFilterType {
   TODAY,
@@ -201,6 +204,7 @@ export const PageStudentDetails: FC<Props> = ({ id }) => {
           </Button>
         </Flex>
         <Box p={3}>
+          <LessonSection />
           <Flex alignItems="center" mb={3}>
             <SectionHeader>OBSERVATIONS</SectionHeader>
             <Spacer />
@@ -229,7 +233,7 @@ export const PageStudentDetails: FC<Props> = ({ id }) => {
 
 const SectionHeader: FC = props => (
   <Typography.H5
-    fontWeight="bold"
+    fontWeight="normal"
     color="textMediumEmphasis"
     letterSpacing={3}
     {...props}
@@ -244,4 +248,50 @@ const ObservationLoadingPlaceholder: FC = () => (
   </Box>
 )
 
+const LessonSection: FC = () => {
+  const [tab, setTab] = useState(0)
+  return (
+    <Box mb={5}>
+      <SectionHeader>LESSONS</SectionHeader>
+      <Card my={3}>
+        <Tab
+          items={categories
+            .filter(({ name }) => name !== "Others")
+            .map(category => category.name)}
+          onTabClick={value => setTab(value)}
+          selectedItemIdx={tab}
+        />
+        <Flex m={3} alignItems="center">
+          <Typography.Body fontSize={0} letterSpacing={2}>
+            BEING LEARNED
+          </Typography.Body>
+          <Spacer />
+          <Button variant="outline" fontSize={0}>
+            {categories[tab + 1].name} Overview
+          </Button>
+        </Flex>
+
+        <Flex px={3} my={2}>
+          <Typography.Body fontSize={1}>
+            {tab === 0 ? "Sandpaper Globe" : "Reading Story"}
+          </Typography.Body>
+          <Spacer />
+          <Button variant="secondary" fontSize={0}>
+            See More
+          </Button>
+        </Flex>
+
+        <Flex px={3} my={2} mb={3}>
+          <Typography.Body fontSize={1}>
+            {tab === 0 ? "Daily Calendar" : "Inset for Design"}
+          </Typography.Body>
+          <Spacer />
+          <Button variant="secondary" fontSize={0}>
+            See More
+          </Button>
+        </Flex>
+      </Card>
+    </Box>
+  )
+}
 export default PageStudentDetails
