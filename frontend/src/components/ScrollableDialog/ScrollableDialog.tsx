@@ -10,7 +10,7 @@ import Box, { BoxProps } from "../Box/Box"
 
 interface Props extends BoxProps {
   title: string
-  negativeText: string
+  negativeText?: string
   positiveText: string
   onDismiss?: () => void
   onNegativeClick?: () => void
@@ -74,9 +74,11 @@ export const ScrollableDialog: FC<Props> = ({
           {subtext}
         </Typography.Body>
         <Spacer />
-        <Button mr={3} variant="outline" onClick={onNegativeClick}>
-          {negativeText}
-        </Button>
+        {negativeText && (
+          <Button mr={3} variant="outline" onClick={onNegativeClick}>
+            {negativeText}
+          </Button>
+        )}
         <Button
           variant="primary"
           onClick={onPositiveClick}

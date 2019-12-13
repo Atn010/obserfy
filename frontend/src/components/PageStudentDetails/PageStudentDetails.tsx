@@ -2,6 +2,7 @@ import React, { FC, useState } from "react"
 import { navigate } from "gatsby"
 import isThisWeek from "date-fns/isThisWeek"
 import isToday from "date-fns/isToday"
+import { FormattedDate } from "gatsby-plugin-intl3"
 import { useQueryStudentDetails } from "../../hooks/students/useQueryStudentDetails"
 import Flex from "../Flex/Flex"
 import Box from "../Box/Box"
@@ -26,6 +27,7 @@ import ToggleButton from "../ToggleButton/ToggleButton"
 import Card from "../Card/Card"
 import { categories } from "../../categories"
 import Tab from "../Tab/Tab"
+import ScrollableDialog from "../ScrollableDialog/ScrollableDialog"
 
 enum ObservationFilterType {
   TODAY,
@@ -51,6 +53,7 @@ function filterObservation(
 interface Props {
   id: string
 }
+
 export const PageStudentDetails: FC<Props> = ({ id }) => {
   const [observationFilterType, setObservationFilterType] = useState(
     ObservationFilterType.TODAY
@@ -248,50 +251,101 @@ const ObservationLoadingPlaceholder: FC = () => (
   </Box>
 )
 
+export interface Lesson {
+  datePresented: number
+  name: string
+}
 const LessonSection: FC = () => {
   const [tab, setTab] = useState(0)
+  const [isEditingLesson, setIsEditingLesson] = useState(false)
+  const [lesson] = useState<Lesson>({
+    name: "Sandpaper Globe",
+    datePresented: Date.now(),
+  })
+
   return (
-    <Box mb={5}>
-      <SectionHeader>LESSONS</SectionHeader>
-      <Card my={3}>
-        <Tab
-          items={categories
-            .filter(({ name }) => name !== "Others")
-            .map(category => category.name)}
-          onTabClick={value => setTab(value)}
-          selectedItemIdx={tab}
+    <>
+      <Box mb={5}>
+        <SectionHeader>LESSONS</SectionHeader>
+        <Card my={3}>
+          <Tab
+            items={categories
+              .filter(({ name }) => name !== "Others")
+              .map(category => category.name)}
+            onTabClick={value => setTab(value)}
+            selectedItemIdx={tab}
+          />
+          <Flex m={3} alignItems="center">
+            <Typography.Body fontSize={1} letterSpacing={2}>
+              PRACTICING
+            </Typography.Body>
+            <Spacer />
+            <Button
+              variant="outline"
+              fontSize={0}
+              onClick={() => navigate(`/lesson?lesson=${lesson.name}`)}
+            >
+              {categories[tab + 1].name} Overview
+            </Button>
+          </Flex>
+
+          <Flex px={3} my={2}>
+            <Typography.Body fontSize={1}>
+              {tab === 0 ? "Puzzle Map of Asia" : "Reading Story"}
+            </Typography.Body>
+            <Spacer />
+            <Button
+              variant="secondary"
+              fontSize={0}
+              onClick={() => setIsEditingLesson(true)}
+              color="orange"
+            >
+              See More
+            </Button>
+          </Flex>
+
+          <Flex px={3} my={2} mb={3}>
+            <Typography.Body fontSize={1}>
+              {tab === 0 ? "Time Line of Child's Life" : "Inset for Design"}
+            </Typography.Body>
+            <Spacer />
+            <Button variant="secondary" fontSize={0} color="orange">
+              See More
+            </Button>
+          </Flex>
+        </Card>
+      </Box>
+      {isEditingLesson && (
+        <LessonDetailDialog
+          lesson={lesson}
+          onDismiss={() => setIsEditingLesson(false)}
         />
-        <Flex m={3} alignItems="center">
-          <Typography.Body fontSize={0} letterSpacing={2}>
-            BEING LEARNED
-          </Typography.Body>
-          <Spacer />
-          <Button variant="outline" fontSize={0}>
-            {categories[tab + 1].name} Overview
-          </Button>
-        </Flex>
-
-        <Flex px={3} my={2}>
-          <Typography.Body fontSize={1}>
-            {tab === 0 ? "Sandpaper Globe" : "Reading Story"}
-          </Typography.Body>
-          <Spacer />
-          <Button variant="secondary" fontSize={0}>
-            See More
-          </Button>
-        </Flex>
-
-        <Flex px={3} my={2} mb={3}>
-          <Typography.Body fontSize={1}>
-            {tab === 0 ? "Daily Calendar" : "Inset for Design"}
-          </Typography.Body>
-          <Spacer />
-          <Button variant="secondary" fontSize={0}>
-            See More
-          </Button>
-        </Flex>
-      </Card>
-    </Box>
+      )}
+    </>
   )
 }
+
+const LessonDetailDialog: FC<{ lesson: Lesson; onDismiss: () => void }> = ({
+  lesson,
+  onDismiss,
+}) => (
+  <ScrollableDialog
+    title="Sandpaper Globe"
+    positiveText="Set as Mastered"
+    onDismiss={onDismiss}
+    onPositiveClick={onDismiss}
+  >
+    <Typography.Body mx={3} mt={3} fontSize={0} letterSpacing={1.5}>
+      DATE PRESENTED
+    </Typography.Body>
+    <Typography.Body mx={3} mb={3}>
+      <FormattedDate
+        value={lesson.datePresented}
+        month="short"
+        day="2-digit"
+        weekday="long"
+      />
+    </Typography.Body>
+  </ScrollableDialog>
+)
 export default PageStudentDetails
