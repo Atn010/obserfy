@@ -187,7 +187,6 @@ exports[`EditObservationDialog should render correctly 1`] = `
   margin: 0;
   min-width: 0;
   padding-bottom: 4px;
-  padding-left: 4px;
 }
 
 .emotion-6 {
@@ -269,14 +268,6 @@ exports[`EditObservationDialog should render correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.emotion-8 {
-  box-sizing: border-box;
-  margin: 0;
-  min-width: 0;
-  padding-left: 4px;
-  padding-bottom: 4px;
 }
 
 .emotion-10 {
@@ -707,7 +698,7 @@ exports[`EditObservationDialog should render correctly 1`] = `
                 class="emotion-11"
               >
                 <div
-                  class="emotion-8"
+                  class="emotion-3"
                 >
                   Short Description
                 </div>
@@ -725,7 +716,7 @@ exports[`EditObservationDialog should render correctly 1`] = `
                 class="emotion-14"
               >
                 <div
-                  class="emotion-8"
+                  class="emotion-3"
                 >
                   Details
                 </div>

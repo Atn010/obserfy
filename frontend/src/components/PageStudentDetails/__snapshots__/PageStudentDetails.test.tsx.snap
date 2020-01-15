@@ -386,11 +386,11 @@ exports[`PageStudentDetails should render correctly 1`] = `
   margin: 0;
   min-width: 0;
   cursor: pointer;
-  background-color: var(--theme-ui-colors-primaryLighter,rgba(98,151,73,0.12));
+  background-color: var(--theme-ui-colors-surface,#fff);
   border-style: solid;
   border-radius: 0;
   border-width: 1px;
-  border-color: var(--theme-ui-colors-primaryLight,#629749);
+  border-color: var(--theme-ui-colors-border,rgba(0,0,0,.1));
   border-left-style: solid;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -420,7 +420,7 @@ exports[`PageStudentDetails should render correctly 1`] = `
   -ms-user-select: none;
   user-select: none;
   text-align: center;
-  color: var(--theme-ui-colors-primaryDark,#003d00);
+  color: var(--theme-ui-colors-text,rgba(0,0,0,0.87));
   font-size: 14px;
   margin: 0;
 }
@@ -430,12 +430,12 @@ exports[`PageStudentDetails should render correctly 1`] = `
   margin: 0;
   min-width: 0;
   cursor: pointer;
-  background-color: var(--theme-ui-colors-surface,#fff);
+  background-color: var(--theme-ui-colors-primaryLighter,rgba(98,151,73,0.12));
   border-style: solid;
   border-radius: 0;
   border-width: 1px;
-  border-color: var(--theme-ui-colors-border,rgba(0,0,0,.1));
-  border-left-style: none;
+  border-color: var(--theme-ui-colors-primaryLight,#629749);
+  border-left-style: primaryLight;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -462,7 +462,7 @@ exports[`PageStudentDetails should render correctly 1`] = `
   -ms-user-select: none;
   user-select: none;
   text-align: center;
-  color: var(--theme-ui-colors-text,rgba(0,0,0,0.87));
+  color: var(--theme-ui-colors-primaryDark,#003d00);
   font-size: 14px;
   margin: 0;
 }
@@ -569,11 +569,15 @@ exports[`PageStudentDetails should render correctly 1`] = `
           <div
             class="emotion-6"
           />
-          <button
-            class="emotion-12"
+          <a
+            href="/dashboard/students/observations/new?studentId=undefined"
           >
-            New
-          </button>
+            <button
+              class="emotion-12"
+            >
+              New
+            </button>
+          </a>
         </div>
         <div
           class="emotion-20"
@@ -600,7 +604,7 @@ exports[`PageStudentDetails should render correctly 1`] = `
             class="emotion-19"
           >
             <p
-              class="emotion-16"
+              class="emotion-14"
             >
               All
             </p>

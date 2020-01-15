@@ -46,7 +46,7 @@ export const Input: FC<Props> = ({
       {...props}
     >
       {label && (
-        <Box pl={1} pb={small ? 2 : 1}>
+        <Box pb={small ? 2 : 1}>
           {label}
         </Box>
       )}

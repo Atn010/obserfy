@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AddObservationDialog should render correctly 1`] = `
-.emotion-25 {
+exports[`PageNewObservation should render correctly 1`] = `
+.emotion-23 {
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
@@ -9,65 +9,8 @@ exports[`AddObservationDialog should render correctly 1`] = `
 }
 
 @media screen and (min-width:40em) {
-  .emotion-25 {
-    font-size: 20px;
-  }
-}
-
-.emotion-24 {
-  box-sizing: border-box;
-  margin: 0;
-  min-width: 0;
-  top: 0;
-  left: 0;
-  z-index: 1000001;
-  position: fixed;
-  -webkit-flex-direction: column-reverse;
-  -ms-flex-direction: column-reverse;
-  flex-direction: column-reverse;
-  background-color: var(--theme-ui-colors-overlay,rgba(0,0,0,.6));
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media screen and (min-width:40em) {
-  .emotion-24 {
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    padding: 16px;
-  }
-}
-
-.emotion-23 {
-  box-sizing: border-box;
-  margin: 0;
-  min-width: 0;
-  padding: 8px;
-  background-color: var(--theme-ui-colors-background,#F7F8FA);
-  border-radius: 8px;
-  box-shadow: rgba(0,0,0,0.1) 0px 0px 1px,rgba(0,0,0,0.27) 0px 2px 4px -2px;
-  border-radius: 0;
-  padding: 0;
-  background-color: var(--theme-ui-colors-surface,#fff);
-  max-width: 640px;
-  overflow: hidden;
-  width: 100%;
-}
-
-@media screen and (min-width:40em) {
   .emotion-23 {
-    border-radius: 8px;
+    font-size: 20px;
   }
 }
 
@@ -75,28 +18,19 @@ exports[`AddObservationDialog should render correctly 1`] = `
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  max-height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  max-width: 700px;
+  margin: auto;
 }
 
 .emotion-2 {
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: var(--theme-ui-colors-border,rgba(0,0,0,.1));
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px;
+  margin-left: -8px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -107,52 +41,40 @@ exports[`AddObservationDialog should render correctly 1`] = `
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
-  font-size: 24px;
-  font-family: Open Sans,-apple-system,BlinkMacSystemFont,San Francisco,Roboto,Segoe UI,Helvetica Neue,sans-serif;
-  font-weight: 300;
-  line-height: heading;
-  font-size: 2rem;
-  line-height: 3rem;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  color: var(--theme-ui-colors-text,rgba(0,0,0,0.87));
-  margin-bottom: 0;
-  margin-right: 16px;
-  font-weight: bold;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  overflow-y: auto;
+  max-width: 100%;
+  height: auto;
+  fill: var(--theme-ui-colors-icon,rgba(0,0,0,0.6));
+  margin: 16px;
+  height: 24px;
+  width: 24px;
+  margin-right: 4px;
 }
 
 .emotion-1 {
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
-  max-width: 100%;
-  height: auto;
-  cursor: pointer;
-  fill: var(--theme-ui-colors-icon,rgba(0,0,0,0.6));
-  margin: 0;
-  height: 32px;
-  width: 32px;
+  color: rgba(0,0,0,0.88);
+  font-size: 1.6rem;
+  font-family: Open Sans,-apple-system,BlinkMacSystemFont,San Francisco,Roboto,Segoe UI,Helvetica Neue,sans-serif;
+  font-weight: 400;
+  line-height: 3rem;
+  color: var(--theme-ui-colors-textMediumEmphasis,rgba(0,0,0,0.60));
+  font-size: 16px;
+  margin-bottom: 0;
 }
 
-.emotion-16 {
-  box-sizing: border-box;
-  margin: 0;
-  min-width: 0;
-  overflow-y: auto;
-  background-color: var(--theme-ui-colors-background,#F7F8FA);
+@media screen and (min-width:40em) {
+  .emotion-1 {
+    font-size: 14px;
+  }
 }
 
 .emotion-15 {
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
-  padding: 16px;
+  margin: 16px;
 }
 
 .emotion-7 {
@@ -390,6 +312,7 @@ exports[`AddObservationDialog should render correctly 1`] = `
   color: var(--theme-ui-colors-text,rgba(0,0,0,0.87));
   width: 100%;
   font-size: 16px;
+  height: 150px;
 }
 
 .emotion-13:hover,
@@ -418,14 +341,11 @@ exports[`AddObservationDialog should render correctly 1`] = `
   line-height: 2rem;
 }
 
-.emotion-21 {
+.emotion-19 {
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
-  border-top-width: 1px;
-  border-top-style: solid;
-  border-top-color: var(--theme-ui-colors-border,rgba(0,0,0,.1));
-  padding: 16px;
+  margin: 16px;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -436,7 +356,7 @@ exports[`AddObservationDialog should render correctly 1`] = `
   display: flex;
 }
 
-.emotion-17 {
+.emotion-16 {
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
@@ -445,18 +365,20 @@ exports[`AddObservationDialog should render correctly 1`] = `
   font-family: Open Sans,-apple-system,BlinkMacSystemFont,San Francisco,Roboto,Segoe UI,Helvetica Neue,sans-serif;
   font-weight: 400;
   line-height: 3rem;
-  color: var(--theme-ui-colors-textMediumEmphasis,rgba(0,0,0,0.60));
+  -webkit-transition: opacity 100ms;
+  transition: opacity 100ms;
+  color: var(--theme-ui-colors-textPrimary,#003d00);
   font-size: 16px;
-  margin-bottom: 0;
+  opacity: 0;
 }
 
 @media screen and (min-width:40em) {
-  .emotion-17 {
+  .emotion-16 {
     font-size: 14px;
   }
 }
 
-.emotion-18 {
+.emotion-17 {
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
@@ -466,79 +388,7 @@ exports[`AddObservationDialog should render correctly 1`] = `
   flex: 1;
 }
 
-.emotion-19 {
-  box-sizing: border-box;
-  margin: 0;
-  min-width: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  display: inline-block;
-  text-align: center;
-  line-height: inherit;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-size: inherit;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  color: white;
-  background-color: var(--theme-ui-colors-primary,#33691e);
-  border: 0;
-  border-radius: 4px;
-  cursor: pointer;
-  text-transform: capitalize;
-  box-sizing: border-box;
-  font-size: 14px;
-  font-weight: bold;
-  color: var(--theme-ui-colors-textPrimary,#003d00);
-  background-color: transparent;
-  border-radius: 8px;
-  font-family: Open Sans,-apple-system,BlinkMacSystemFont,San Francisco,Roboto,Segoe UI,Helvetica Neue,sans-serif;
-  -webkit-transition: background-color 125ms cubic-bezier(0.0,0.0,0.2,1);
-  transition: background-color 125ms cubic-bezier(0.0,0.0,0.2,1);
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-  white-space: nowrap;
-  border: 1px solid;
-  border-color: var(--theme-ui-colors-border,rgba(0,0,0,.1));
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 16px;
-}
-
-.emotion-19:disabled {
-  opacity: 0.38;
-  cursor: auto;
-}
-
-.emotion-19:hover,
-.emotion-19:focus {
-  background-color: var(--theme-ui-colors-primaryLighter,rgba(98,151,73,0.12));
-  border-color: var(--theme-ui-colors-primary,#33691e);
-  outline: none;
-}
-
-.emotion-19:hover:disabled,
-.emotion-19:focus:disabled {
-  background-color: transparent;
-  border-color: var(--theme-ui-colors-border,rgba(0,0,0,.1));
-}
-
-.emotion-20 {
+.emotion-18 {
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
@@ -589,167 +439,179 @@ exports[`AddObservationDialog should render correctly 1`] = `
   display: flex;
 }
 
-.emotion-20:disabled {
+.emotion-18:disabled {
   opacity: 0.38;
   cursor: auto;
 }
 
-.emotion-20:hover,
-.emotion-20:focus {
+.emotion-18:hover,
+.emotion-18:focus {
   background-color: var(--theme-ui-colors-primaryDark,#003d00);
   outline: none;
 }
 
-.emotion-20:hover:disabled,
-.emotion-20:focus:disabled {
+.emotion-18:hover:disabled,
+.emotion-18:focus:disabled {
   background-color: var(--theme-ui-colors-primary,#33691e);
+}
+
+.emotion-20 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  font-size: 24px;
+  font-family: Open Sans,-apple-system,BlinkMacSystemFont,San Francisco,Roboto,Segoe UI,Helvetica Neue,sans-serif;
+  font-weight: 300;
+  line-height: heading;
+  font-size: 2rem;
+  line-height: 3rem;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: var(--theme-ui-colors-text,rgba(0,0,0,0.87));
+  margin-bottom: 16px;
 }
 
 <div>
   <div
-    class="emotion-25"
+    class="emotion-23"
   >
     <div
-      class="emotion-24"
+      class="emotion-22"
     >
-      <div
-        class="emotion-23"
+      <a
+        href="/dashboard/students/details?id=undefined"
       >
         <div
-          class="emotion-22"
+          class="emotion-2"
         >
           <div
-            class="emotion-2"
-          >
-            <h6
-              class="emotion-0"
-            >
-              New Observation
-            </h6>
-            <div
-              class="emotion-1"
-            />
-          </div>
-          <div
-            class="emotion-16"
-          >
-            <div
-              class="emotion-15"
-            >
-              <label
-                class="emotion-7"
-              >
-                <div
-                  class="emotion-3"
-                >
-                  Category
-                </div>
-                <div
-                  class="emotion-6"
-                >
-                  <select
-                    aria-label="Category"
-                    class="emotion-4"
-                  >
-                    <option
-                      value="0"
-                    >
-                      Others
-                    </option>
-                    <option
-                      value="1"
-                    >
-                      Cultural
-                    </option>
-                    <option
-                      value="2"
-                    >
-                      Language
-                    </option>
-                    <option
-                      value="3"
-                    >
-                      Mathematics
-                    </option>
-                    <option
-                      value="4"
-                    >
-                      Practical Life
-                    </option>
-                    <option
-                      value="5"
-                    >
-                      Sensorial
-                    </option>
-                  </select>
-                  <svg
-                    class="emotion-5"
-                    fill="currentcolor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M7 10l5 5 5-5z"
-                    />
-                  </svg>
-                </div>
-              </label>
-              <label
-                class="emotion-11"
-              >
-                <div
-                  class="emotion-3"
-                >
-                  Short Description
-                </div>
-                <div
-                  class="emotion-10"
-                >
-                  <input
-                    class="emotion-9"
-                    placeholder="What have you find?"
-                    value=""
-                  />
-                </div>
-              </label>
-              <label
-                class="emotion-14"
-              >
-                <div
-                  class="emotion-3"
-                >
-                  Details
-                </div>
-                <textarea
-                  class="emotion-13"
-                  placeholder="Tell us about what you observed"
-                />
-              </label>
-            </div>
-          </div>
-          <div
-            class="emotion-21"
-          >
-            <p
-              class="emotion-17"
-            />
-            <div
-              class="emotion-18"
-            />
-            <button
-              class="emotion-19"
-            >
-              Cancel
-            </button>
-            <button
-              class="emotion-20"
-              data-cy="dialogPositiveAction"
-              disabled=""
-            >
-              Add
-            </button>
-          </div>
+            class="emotion-0"
+          />
+          <p
+            class="emotion-1"
+          />
         </div>
+      </a>
+      <div
+        class="emotion-15"
+      >
+        <label
+          class="emotion-7"
+        >
+          <div
+            class="emotion-3"
+          >
+            Category
+          </div>
+          <div
+            class="emotion-6"
+          >
+            <select
+              aria-label="Category"
+              class="emotion-4"
+            >
+              <option
+                value="0"
+              >
+                Others
+              </option>
+              <option
+                value="1"
+              >
+                Cultural
+              </option>
+              <option
+                value="2"
+              >
+                Language
+              </option>
+              <option
+                value="3"
+              >
+                Mathematics
+              </option>
+              <option
+                value="4"
+              >
+                Practical Life
+              </option>
+              <option
+                value="5"
+              >
+                Sensorial
+              </option>
+            </select>
+            <svg
+              class="emotion-5"
+              fill="currentcolor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7 10l5 5 5-5z"
+              />
+            </svg>
+          </div>
+        </label>
+        <label
+          class="emotion-11"
+        >
+          <div
+            class="emotion-3"
+          >
+            Short Description
+          </div>
+          <div
+            class="emotion-10"
+          >
+            <input
+              class="emotion-9"
+              placeholder="What have you found?"
+              value=""
+            />
+          </div>
+        </label>
+        <label
+          class="emotion-14"
+        >
+          <div
+            class="emotion-3"
+          >
+            Details
+          </div>
+          <textarea
+            class="emotion-13"
+            placeholder="Tell us about what you observed"
+          />
+        </label>
+      </div>
+      <div
+        class="emotion-19"
+      >
+        <p
+          class="emotion-16"
+        >
+          Observation added!!
+        </p>
+        <div
+          class="emotion-17"
+        />
+        <button
+          class="emotion-18"
+        >
+          Save
+        </button>
+      </div>
+      <div
+        class="emotion-15"
+      >
+        <h6
+          class="emotion-20"
+        >
+          Today's Observations
+        </h6>
       </div>
     </div>
   </div>
