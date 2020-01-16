@@ -1,10 +1,35 @@
 import React, { FC } from "react"
-
+import { animated, useTransition } from "react-spring"
 import Card from "../Card/Card"
 import { Flex } from "../Flex/Flex"
 import { BoxProps } from "../Box/Box"
 
-export const Dialog: FC<BoxProps> = props => (
+interface Props extends BoxProps {
+  shown: boolean
+}
+export const Dialog: FC<Props> = ({ shown, ...componentProps }) => {
+  const transition = useTransition(shown, null, {
+    from: {
+      position: "absolute",
+      opacity: 0,
+      zIndex: 1000001,
+    },
+    enter: { opacity: 1, marginBottom: 0 },
+    leave: { opacity: 0, marginBottom: -100 },
+  })
+
+  const dialog = transition.map(
+    ({ item, key, props }) =>
+      item && (
+        <animated.div key={key} style={props}>
+          <DialogElement {...componentProps} />
+        </animated.div>
+      )
+  )
+  return <>{dialog}</>
+}
+
+const DialogElement: FC<BoxProps> = props => (
   <Flex
     flexDirection="column-reverse"
     alignItems={["", "center"]}

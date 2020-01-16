@@ -10,8 +10,13 @@ import { categories } from "../../categories"
 interface Props {
   onCancel: () => void
   onConfirm: (observations: Observation) => void
+  shown: boolean
 }
-export const AddObservationDialog: FC<Props> = ({ onConfirm, onCancel }) => {
+export const AddObservationDialog: FC<Props> = ({
+  shown,
+  onConfirm,
+  onCancel,
+}) => {
   const [shortDesc, setShortDesc] = useState("")
   const [details, setDetails] = useState("")
   const [category, setCategory] = useState(categories[0].id)
@@ -27,6 +32,7 @@ export const AddObservationDialog: FC<Props> = ({ onConfirm, onCancel }) => {
       onDismiss={onCancel}
       onNegativeClick={onCancel}
       disablePositiveButton={shortDesc === ""}
+      shown={shown}
     >
       <Box p={3}>
         <Select

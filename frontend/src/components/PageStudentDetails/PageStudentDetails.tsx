@@ -150,8 +150,9 @@ export const PageStudentDetails: FC<Props> = ({ id }) => {
     />
   )
 
-  const addObservationDialog = isAddingObservation && (
+  const addObservationDialog = (
     <AddObservationDialog
+      shown={isAddingObservation}
       onCancel={() => setIsAddingObservation(false)}
       onConfirm={submitAddObservation}
     />

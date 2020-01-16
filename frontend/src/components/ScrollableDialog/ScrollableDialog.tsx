@@ -17,6 +17,7 @@ interface Props extends BoxProps {
   onPositiveClick?: () => void
   subtext?: string
   disablePositiveButton?: boolean
+  shown: boolean
 }
 export const ScrollableDialog: FC<Props> = ({
   positiveText,
