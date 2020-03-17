@@ -12,14 +12,10 @@ jobs:
             - build-{{ checksum "frontend/yarn.lock" }}
       - run: |
           cd frontend
-          yarn install
-      - run: |
-          cd frontend
           yarn build
       - persist_to_workspace:
           root: ../
           paths:
-            - repo/frontend/node_modules
             - repo/frontend/public
             - .cache/Cypress
       - save_cache:
