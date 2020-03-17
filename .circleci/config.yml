@@ -109,9 +109,6 @@ jobs:
           at: ../
       - run: |
           cd frontend
-          yarn install
-      - run: |
-          cd frontend
           yarn test -w 1
       - run: bash <(curl -s https://codecov.io/bash)
       - store_test_results:
@@ -127,9 +124,6 @@ jobs:
           at: ../
       - run: |
           cd frontend
-          yarn install
-      - run: |
-          cd frontend
           yarn lint
 
   frontend_typecheck:
@@ -140,9 +134,6 @@ jobs:
       - checkout
       - attach_workspace:
           at: ../
-      - run: |
-          cd frontend
-          yarn install
       - run: |
           cd frontend
           yarn typecheck
