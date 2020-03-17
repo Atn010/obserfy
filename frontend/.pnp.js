@@ -19532,7 +19532,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rollup-plugin-hypothetical", "npm:2.1.0"],
             ["rollup-plugin-typescript", "virtual:e40c00a97f868b79ce9a540c101d050e4955a9e1f0a8ab31a60750df20d881da669b36eebf086c27cf4a99be4d34df006e8eeac52c77ea453a611814eaa038ee#npm:1.0.1"],
             ["table", "npm:5.4.6"],
-            ["webpack", "npm:4.42.0"]
+            ["webpack", "npm:4.42.0"],
+            ["webpack-sources", "npm:1.4.3"]
           ],
           "linkType": "HARD",
         }]
