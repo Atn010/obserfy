@@ -1,4 +1,5 @@
 /// <reference types="jest-fetch-mock" />
+/// <reference types="react-intl" />
 
 declare module "*.svg" {
   // eslint-disable-next-line import/no-duplicates

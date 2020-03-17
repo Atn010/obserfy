@@ -19,12 +19,12 @@ if (!Intl.RelativeTimeFormat) {
 
 // TODO: Enabling react's concurrent mode is experimental
 //  precede with caution
-export const replaceHydrateFunction = () => {
-  return (element, container, callback) => {
-    ReactDOM.createRoot(container, {
-      hydrate: true,
-      hydrationOptions: { onHydrated: callback },
-    }).render(element)
-  }
-}
+// export const replaceHydrateFunction = () => {
+//   return (element, container, callback) => {
+//     ReactDOM.createRoot(container, {
+//       hydrate: true,
+//       hydrationOptions: { onHydrated: callback },
+//     }).render(element)
+//   }
+// }
 //
