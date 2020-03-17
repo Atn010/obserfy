@@ -62,6 +62,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "virtual:6b40785379c5748aa9f7c631707dcf84907d023f79e259a8ea35ddbff62d43d53014f599fc7f9b2fb175e29c6aee5da2b27bd2a5b90886b2d3a034bcce99e979#npm:7.8.3"
       ],
       [
+        "@babel/runtime",
+        "npm:7.8.7"
+      ],
+      [
         "@cypress/code-coverage",
         "virtual:6b40785379c5748aa9f7c631707dcf84907d023f79e259a8ea35ddbff62d43d53014f599fc7f9b2fb175e29c6aee5da2b27bd2a5b90886b2d3a034bcce99e979#npm:1.14.0"
       ],
@@ -593,6 +597,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-env", "virtual:713814e5f8ee3f2c7f06e291ffa3a9cad57939f5fde9142ccd8de89c97d4f9f1df5a6272c05adbb2a13f98e328b141d9c88c69435b40d7cd6486c2cffa63e041#npm:7.8.7"],
             ["@babel/preset-react", "virtual:713814e5f8ee3f2c7f06e291ffa3a9cad57939f5fde9142ccd8de89c97d4f9f1df5a6272c05adbb2a13f98e328b141d9c88c69435b40d7cd6486c2cffa63e041#npm:7.8.3"],
             ["@babel/preset-typescript", "virtual:6b40785379c5748aa9f7c631707dcf84907d023f79e259a8ea35ddbff62d43d53014f599fc7f9b2fb175e29c6aee5da2b27bd2a5b90886b2d3a034bcce99e979#npm:7.8.3"],
+            ["@babel/runtime", "npm:7.8.7"],
             ["@cypress/code-coverage", "virtual:6b40785379c5748aa9f7c631707dcf84907d023f79e259a8ea35ddbff62d43d53014f599fc7f9b2fb175e29c6aee5da2b27bd2a5b90886b2d3a034bcce99e979#npm:1.14.0"],
             ["@cypress/webpack-preprocessor", "virtual:6b40785379c5748aa9f7c631707dcf84907d023f79e259a8ea35ddbff62d43d53014f599fc7f9b2fb175e29c6aee5da2b27bd2a5b90886b2d3a034bcce99e979#npm:4.1.3"],
             ["@emotion/core", "virtual:6b40785379c5748aa9f7c631707dcf84907d023f79e259a8ea35ddbff62d43d53014f599fc7f9b2fb175e29c6aee5da2b27bd2a5b90886b2d3a034bcce99e979#npm:10.0.27"],
@@ -35025,6 +35030,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-env", "virtual:713814e5f8ee3f2c7f06e291ffa3a9cad57939f5fde9142ccd8de89c97d4f9f1df5a6272c05adbb2a13f98e328b141d9c88c69435b40d7cd6486c2cffa63e041#npm:7.8.7"],
             ["@babel/preset-react", "virtual:713814e5f8ee3f2c7f06e291ffa3a9cad57939f5fde9142ccd8de89c97d4f9f1df5a6272c05adbb2a13f98e328b141d9c88c69435b40d7cd6486c2cffa63e041#npm:7.8.3"],
             ["@babel/preset-typescript", "virtual:6b40785379c5748aa9f7c631707dcf84907d023f79e259a8ea35ddbff62d43d53014f599fc7f9b2fb175e29c6aee5da2b27bd2a5b90886b2d3a034bcce99e979#npm:7.8.3"],
+            ["@babel/runtime", "npm:7.8.7"],
             ["@cypress/code-coverage", "virtual:6b40785379c5748aa9f7c631707dcf84907d023f79e259a8ea35ddbff62d43d53014f599fc7f9b2fb175e29c6aee5da2b27bd2a5b90886b2d3a034bcce99e979#npm:1.14.0"],
             ["@cypress/webpack-preprocessor", "virtual:6b40785379c5748aa9f7c631707dcf84907d023f79e259a8ea35ddbff62d43d53014f599fc7f9b2fb175e29c6aee5da2b27bd2a5b90886b2d3a034bcce99e979#npm:4.1.3"],
             ["@emotion/core", "virtual:6b40785379c5748aa9f7c631707dcf84907d023f79e259a8ea35ddbff62d43d53014f599fc7f9b2fb175e29c6aee5da2b27bd2a5b90886b2d3a034bcce99e979#npm:10.0.27"],

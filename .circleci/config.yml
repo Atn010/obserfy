@@ -56,9 +56,6 @@ jobs:
           docker-compose up -d
       - run: |
           cd frontend
-          yarn install
-      - run: |
-          cd frontend
           yarn cy:ci
       - run: bash <(curl -s https://codecov.io/bash)
       - store_test_results:
