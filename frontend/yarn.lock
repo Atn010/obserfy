@@ -5026,6 +5026,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@styled-system/border@npm:^5.1.5":
+  version: 5.1.5
+  resolution: "@styled-system/border@npm:5.1.5"
+  dependencies:
+    "@styled-system/core": ^5.1.2
+  checksum: 2/47a3a5350c1f1811825d4772a17103614d8fac2bc74afa18a2f7d4d44968067ee01a2be433ca40aa570b8d98b9c9723548e89901c7b866892533bd11b8c9e2fb
+  languageName: node
+  linkType: hard
+
 "@styled-system/color@npm:^5.1.2":
   version: 5.1.2
   resolution: "@styled-system/color@npm:5.1.2"
@@ -5055,6 +5064,13 @@ __metadata:
   version: 5.1.4
   resolution: "@styled-system/css@npm:5.1.4"
   checksum: 2/680751629bd507fdded3c5a492e556e96ce01db10ced862211229f75f538041c6b55646de9b9e2b45ad5d35052ecd64bf5ed21722b2809ac787bc5ef8e0332ae
+  languageName: node
+  linkType: hard
+
+"@styled-system/css@npm:^5.1.5":
+  version: 5.1.5
+  resolution: "@styled-system/css@npm:5.1.5"
+  checksum: 2/3b3322754e87992b1ce8dba0e58241c6a07858e45373179920dd273ca378e4f5f8abff1dcf2672e708ae980ae5ebaffcd13a0ab5d3918a1b79b1292324e35ab2
   languageName: node
   linkType: hard
 
@@ -5100,6 +5116,17 @@ __metadata:
   dependencies:
     "@styled-system/core": ^5.1.2
   checksum: 2/8d87b72bb2b2f225e24b98805b07b8e771057207705f30837255e9d8f823602a79e8dfc24134acf514a472d23f3389f858a1876d95032025dad933b8bae1fb75
+  languageName: node
+  linkType: hard
+
+"@styled-system/should-forward-prop@npm:*":
+  version: 5.1.5
+  resolution: "@styled-system/should-forward-prop@npm:5.1.5"
+  dependencies:
+    "@emotion/is-prop-valid": ^0.8.1
+    "@emotion/memoize": ^0.7.1
+    styled-system: ^5.1.5
+  checksum: 2/88a12889b1ae56cddc9d1b20bec0af4d101d0f06cfc73d89c8c70fc0cf1a9a11dec3a38a17665601a898de5195e65ed09c383d7ba539f3ebbba1807591aa3581
   languageName: node
   linkType: hard
 
@@ -5160,6 +5187,16 @@ __metadata:
     "@styled-system/core": ^5.1.2
     "@styled-system/css": ^5.1.4
   checksum: 2/c82e5c1262f1ac7c2381dc95cf9ab7df53b4d8bf97480196052ef68b13cfb8b6be5b1e6629a480694212b6cde6fcce181736a34b5fb6fa79715ca3c8e3fbaac9
+  languageName: node
+  linkType: hard
+
+"@styled-system/variant@npm:^5.1.5":
+  version: 5.1.5
+  resolution: "@styled-system/variant@npm:5.1.5"
+  dependencies:
+    "@styled-system/core": ^5.1.2
+    "@styled-system/css": ^5.1.5
+  checksum: 2/4532e5affd38b62ae2cb3de698084e71b896def6e0c4a55e97809d695861c3565bbc17e7b0a744729d04fcf6d44fcd95ef64a2be64fd9c8f7c40236da9c647b0
   languageName: node
   linkType: hard
 
@@ -28000,6 +28037,27 @@ resolve@1.1.7:
     "@styled-system/variant": ^5.1.4
     object-assign: ^4.1.1
   checksum: 2/9f8759261739d3e382956072d284c26af0cec6795fdf65b206d8ef1c6b5abe5e48ef51814e5747c0e967ef494702750e7510924b108d0f262187b58aa8f484ff
+  languageName: node
+  linkType: hard
+
+"styled-system@npm:^5.1.5":
+  version: 5.1.5
+  resolution: "styled-system@npm:5.1.5"
+  dependencies:
+    "@styled-system/background": ^5.1.2
+    "@styled-system/border": ^5.1.5
+    "@styled-system/color": ^5.1.2
+    "@styled-system/core": ^5.1.2
+    "@styled-system/flexbox": ^5.1.2
+    "@styled-system/grid": ^5.1.2
+    "@styled-system/layout": ^5.1.2
+    "@styled-system/position": ^5.1.2
+    "@styled-system/shadow": ^5.1.2
+    "@styled-system/space": ^5.1.2
+    "@styled-system/typography": ^5.1.2
+    "@styled-system/variant": ^5.1.5
+    object-assign: ^4.1.1
+  checksum: 2/d19e71b3d3f7ee4f056d1290f117ac73a940ee84688bc7522e061fd0ddbf80f266fc89e4fa425c31442ce31a48bfbee3610e6ef511aa4378d579ff31af29fd0c
   languageName: node
   linkType: hard
 
