@@ -21,6 +21,8 @@ jobs:
           paths:
             - .yarn/unplugged/*
             - .yarn/build-state.yml
+            - .cache
+            - .public
       - save_cache:
           when: always
           name: Save Yarn Package Cache
@@ -28,6 +30,8 @@ jobs:
           paths:
             - ./frontend/.yarn/unplugged
             - ./frontend/.yarn/build-state.yml
+            - ./frontend/.cache
+            - ./frontend/public
       - store_artifacts:
           path: ./frontend/public
 
