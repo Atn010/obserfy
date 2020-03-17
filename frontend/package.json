@@ -183,5 +183,10 @@
     "hooks": {
       "pre-commit": "yarn lint --fix && yarn typecheck"
     }
+  },
+  "dependenciesMeta": {
+    "flat-cache": {
+      "unplugged": true
+    }
   }
 }

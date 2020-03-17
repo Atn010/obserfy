@@ -17490,7 +17490,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["flat-cache", [
         ["npm:2.0.1", {
-          "packageLocation": "./.yarn/cache/flat-cache-npm-2.0.1-abf037b0b9-2.zip/node_modules/flat-cache/",
+          "packageLocation": "./.yarn/unplugged/flat-cache-npm-2.0.1-abf037b0b9/node_modules/flat-cache/",
           "packageDependencies": [
             ["flat-cache", "npm:2.0.1"],
             ["flatted", "npm:2.0.1"],
