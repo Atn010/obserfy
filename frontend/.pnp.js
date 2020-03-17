@@ -18267,8 +18267,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby-plugin-guess-js", "virtual:6b40785379c5748aa9f7c631707dcf84907d023f79e259a8ea35ddbff62d43d53014f599fc7f9b2fb175e29c6aee5da2b27bd2a5b90886b2d3a034bcce99e979#npm:1.1.32"],
             ["@babel/runtime", "npm:7.8.7"],
             ["gatsby", "virtual:6b40785379c5748aa9f7c631707dcf84907d023f79e259a8ea35ddbff62d43d53014f599fc7f9b2fb175e29c6aee5da2b27bd2a5b90886b2d3a034bcce99e979#npm:2.19.45"],
-            ["guess-webpack", "npm:0.4.15"],
-            ["memory-fs", "npm:0.5.0"]
+            ["guess-webpack", "npm:0.4.15"]
           ],
           "packagePeers": [
             "gatsby"
@@ -19528,6 +19527,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["googleapis", "npm:47.0.0"],
             ["guess-ga", "npm:0.4.14"],
             ["lodash.template", "npm:4.5.0"],
+            ["memory-fs", "npm:0.5.0"],
             ["rollup", "npm:1.31.1"],
             ["rollup-plugin-hypothetical", "npm:2.1.0"],
             ["rollup-plugin-typescript", "virtual:e40c00a97f868b79ce9a540c101d050e4955a9e1f0a8ab31a60750df20d881da669b36eebf086c27cf4a99be4d34df006e8eeac52c77ea453a611814eaa038ee#npm:1.0.1"],
