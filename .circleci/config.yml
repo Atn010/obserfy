@@ -22,7 +22,7 @@ jobs:
             - .yarn/unplugged/*
             - .yarn/build-state.yml
             - .cache
-            - .public
+            - public
       - save_cache:
           when: always
           name: Save Yarn Package Cache
